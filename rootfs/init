@@ -1,0 +1,8 @@
+#!/bin/sh
+
+mount -t proc none /proc
+mount -t sysfs none /sys
+mknod /dev/xvda b 202 0
+mount -n /dev/xvda /ssd
+
+exec /bin/sh
