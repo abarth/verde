@@ -1,2 +1,5 @@
+CC=../../../out/musl/bin/musl-gcc
+CFLAGS=-static
+
 hello:
-	$(CC) -static hello.c -o hello
+	$(CC) $(CFLAGS) hello.c -o hello
